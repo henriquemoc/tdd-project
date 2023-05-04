@@ -1,0 +1,5 @@
+O processo mostrado na imagem é dividido para dois diferentes ramos, formados pelos testes de unidade e testes funcionais.
+
+Os dois ramos testam aspectos diferentes do programa. Primeiramente, eles agem como dois loops, um interno ao outro. O mais externo lida com os testes funcionais, que dizem respeito ao comportamento geral do programa. O loop interno representa os testes de unidade, que garantem que comportamentos do código, separados de todo o restante, estão funcionando. A ideia é, para cada um deles, começar com os testes que indicam como o código deve agir e ir construindo o código aos poucos, sempre retestando o código. O loop mais externo(testes funcionais) é o primeiro a ser testado e, se um código não passar nos testes, aí os testes de unidade(loop interno) são acionados.
+
+Ambos tem a devida importância. O loop externo testa o funcionamento do sistema como um todo, isto é, na visão de um cliente. Os internos são mais focados aos engenheiros de software, que tem que garantir código que passe nos testes de unidade.
